@@ -1,5 +1,5 @@
 {
   "yaml.schemas": {
-    "https://json.schemastore.org/github-action.json": "file:///Users/lucas/repos/banco-inter-clone/.github/workflows/flutter.yml"
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/lucas/repos/banco-inter-clone/.github/workflows/flutter.yml"
   }
 }

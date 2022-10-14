@@ -13,5 +13,4 @@ jobs:
         architecture: x64
     - run: flutter --version
     - run: flutter pub get
-    - run: flutter test
     - run: flutter build ios --release --no-codesign
