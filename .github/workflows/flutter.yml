@@ -14,11 +14,6 @@ jobs:
       with:
         channel: 'stable'
         architecture: x64
-    - name: CocoaPod Install
-      run: cd ios/
-      run: pod install
-    - name: Force xcode version
-      run: sudo xcode-select -switch /Applications/Xcode_11.2.1.app
     - name: Build
     - run: flutter --version
     - run: flutter pub get
