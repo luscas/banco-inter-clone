@@ -13,4 +13,9 @@ jobs:
         architecture: x64
     - run: flutter --version
     - run: flutter pub get
-    - run: flutter build ios --release --no-codesign
+    - run: flutter build ipa --release --no-codesign
+    - name: Save APPBUNDLE to Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: APPBUNDLE
+        path: build/app/outputs/bundle/release/*.xcarchive
