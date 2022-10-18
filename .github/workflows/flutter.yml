@@ -14,8 +14,8 @@ jobs:
     - run: flutter --version
     - run: flutter pub get
     - run: flutter build ipa --release --no-codesign
-    - name: Save APPBUNDLE to Artifacts
-      uses: actions/upload-artifact@v2
+    - name: Download artifacts
+      uses: actions/upload-artifact@v3
       with:
         name: APPBUNDLE
-        path: build/app/outputs/bundle/release/*.xcarchive
+        path: build/ios/ipa/*.ipa
